@@ -9,6 +9,8 @@ $(document).ready(function () {
 let numCorrect = 0;
 let numIncorrect = 0; 
 
+
+
 function quiz() {
   $("#start").hide();
   $("#submit").show();
@@ -91,7 +93,7 @@ function showResults() {
 
   });
   $("#correctAnswer").text("CorrectAnswer" + " " + numCorrect);
-  $("#incorrectAnswer").text("CorrectAnswer" + " " + numIncorrect);
+  $("#incorrectAnswer").text("IncorrectAnswer" + " " + numIncorrect);
   
  // resultsContainer.innerHTML = `${numCorrect} out of ${myQuestions.length}`;
 }
@@ -102,33 +104,127 @@ const submitButton = document.getElementById("submit");
 const tryAgainButton = document.getElementById("retry");
 const myQuestions = [
   {
-    question: "Who is the strongest?",
+    question: "Question 1: What is the best-selling Nintendo exclusive game of all time?",
     answers: {
-      a: "Superman",
-      b: "The Terminator",
-      c: "Waluigi, obviously"
+      a: "Duck Hunt",
+      b: "Super Mario Bros.",
+      c: "Wii Sports",
+      d: "Mario Kart Wii"
     },
     correctAnswer: "c"
   },
   {
-    question: "What is the best site ever created?",
+    question: "Question 2: Which of the following games did Mario creator Shigeru Miyamoto NOT design?",
     answers: {
-      a: "SitePoint",
-      b: "Simple Steps Code",
-      c: "Trick question; they're both the best"
+      a: "Donkey Kong",
+      b: "Excitebike",
+      c: "Kid Icarus",
+      d: "The Legend of Zelda"
     },
     correctAnswer: "c"
   },
   {
-    question: "Where is Waldo really?",
+    question: "Question 3: What is the first game with Princess Zelda as a playable character?",
     answers: {
-      a: "Antarctica",
-      b: "Exploring the Pacific Ocean",
-      c: "Sitting in a tree",
-      d: "Minding his own business, so stop asking"
+      a: "The Legend of Zelda: Ocarina of Time",
+      b: "Super Smash Bros. Melee",
+      c: "Super Smash Bros. Brawl",
+      d: "Zelda: Wand of Gamelon"
     },
     correctAnswer: "d"
-  }
+  },
+  {
+    question: "Question 4: What is the best-selling Nintendo handheld of all time?",
+    answers: {
+      a: "ANintendo Game Boy",
+      b: "Nintendo Game Boy Advance",
+      c: "Nintendo DS",
+      d: "Nintendo 3DS",
+    },
+    correctAnswer: "c"
+  },
+  {
+    question: "Question 5: Which pro baseball team did Nintendo become majority owner of in 1992?",
+    answers: {
+      a: "Seattle Mariners",
+      b: "Oakland Athletics",
+      c: "Kansas City Royals",
+      d: "Tampa Bay Rays",
+    },
+    correctAnswer: "a"
+  },
+  {
+    question: "Question 6: Which Nintendo game caused enough injuries in children to result in a $80M settlement?",
+    answers: {
+      a: "Tony Hawk's Pro Skater",
+      b: "Super Smash Bros.",
+      c: "Mario Kart 64",
+      d: "Mario Party",
+    },
+    correctAnswer: "d"
+  },
+  {
+    question: "Question 7: What is the first Nintendo game to feature Mario in it?",
+    answers: {
+      a: "Mario Bros.",
+      b: "Tennis",
+      c: "Donkey Kong",
+      d: "Wrecking Crew",
+    },
+    correctAnswer: "c"
+  },
+  {
+    question: "Question 8: What is the name of Nintendo's first-ever 'Game & Watch' title?",
+    answers: {
+      a: "Ball",
+      b: "Oil Panic",
+      c: "Egg",
+      d: "Mario Bros.",
+    },
+    correctAnswer: "a"
+  },
+  {
+    question: "Question 9: Which film inspired the enemies in Nintendo's Metroid series?",
+    answers: {
+      a: "Star Wars",
+      b: "Galaxy of Terror",
+      c: "Predator",
+      d: "Alien",
+    },
+    correctAnswer: "d"
+  },
+  {
+    question: "Question 10: What was the first NES game to use the Konami Code?",
+    answers: {
+      a: "Contra",
+      b: "R-Type",
+      c: "Gradius",
+      d: "Life Force",
+    },
+    correctAnswer: "b"
+  },
+  {
+    question: "Question 11: What was Nintendo's original line of business when the company was founded in 1889?",
+    answers: {
+      a: "Playing Cards",
+      b: "Instant Rice",
+      c: "Taxi Company",
+      d: "Love Hotels"
+    },
+    correctAnswer: "a"
+  },
+  {
+    question: "Question 12: What was the first SNES game to use the Super FX chip?",
+    answers: {
+      a: "Pilotwings",
+      b: "Star Fox",
+      c: "Doom",
+      d: "Super Mario World 2: Yoshi's Island",
+    },
+    correctAnswer: "b"
+  },
+
+  
 ];
 function restartGame (){
 quiz();
