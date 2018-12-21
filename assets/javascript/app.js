@@ -16,7 +16,7 @@ function quiz() {
   $("#submit").show();
   $("#timer").show();
 
-  let count = 2;
+  let count = 60;
   timer = setInterval(function () {
     $("#timer").html(count--);
 
@@ -136,7 +136,7 @@ const myQuestions = [
   {
     question: "Question 4: What is the best-selling Nintendo handheld of all time?",
     answers: {
-      a: "ANintendo Game Boy",
+      a: "Nintendo Game Boy",
       b: "Nintendo Game Boy Advance",
       c: "Nintendo DS",
       d: "Nintendo 3DS",
@@ -240,4 +240,3 @@ submitButton.addEventListener("click", showResults);
 
 ///restart game///
 tryAgainButton.addEventListener("click", restartGame );
-
