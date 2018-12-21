@@ -3,6 +3,7 @@ $(document).ready(function () {
   $("#submit").hide();
   $("#retry").hide();
   $("#timer").hide();
+  $("#timeLeft").hide();
 })
 
 
@@ -15,18 +16,19 @@ function quiz() {
   $("#start").hide();
   $("#submit").show();
   $("#timer").show();
+  $("#timeLeft").show();
+
 
   let count = 60;
   timer = setInterval(function () {
-    $("#timer").html(count--);
+    $("#timer").text(count--);
 
     if (count == -1) {
       clearInterval(timer);
-     
+      showResults();
       document.getElementById("timer").innerHTML = "TIMES UP!";
       $("#retry").show();
-    };
-    
+    }
   }, 1000);
 
   const output = [];
